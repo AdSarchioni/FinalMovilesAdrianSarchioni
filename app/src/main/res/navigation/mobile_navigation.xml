@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_auto">
+
+
+    <fragment
+        android:id="@+id/nav_auto"
+        android:name="com.movi.mynotenavegable.ui.auto.AutoFragment"
+        android:label="Mostrar Autos"
+        tools:layout="@layout/fragment_auto" />
+    <fragment
+        android:id="@+id/nav_cargar"
+        android:name="com.movi.mynotenavegable.cargar.CargarFragment"
+        android:label="Cargar Autos"
+        tools:layout="@layout/fragment_cargar" />
+    <fragment
+        android:id="@+id/nav_salir"
+        android:name="com.movi.mynotenavegable.salir.SalirFragment"
+        android:label="Salir"
+        tools:layout="@layout/fragment_salir" />
+</navigation>
